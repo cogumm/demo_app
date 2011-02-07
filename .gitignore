@@ -5,3 +5,4 @@ tmp/**/*
 .redcar
 .redcar/*
 .redcar/**/*
+config/database.yml
