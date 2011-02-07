@@ -1,8 +1,9 @@
 DemoApp::Application.routes.draw do
   resources :microposts
-
-  #root :to => "user#index"
-  
   resources :users
   
+  get "pages/home"
+  get "pages/contact"
+
+  #root :to => "user#index"
 end
