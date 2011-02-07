@@ -140,17 +140,49 @@ td.sidebar {
 div.field, div.actions {
   margin-bottom: 10px;
 }
-
+.fields {
+  padding: 3px 5px 3px 5px;
+}
+.fields label.auto_size {
+  width: auto;
+}
+.fields label.bold {
+  font-weight: bold;
+}
+.fields label.example {
+  font-size: 8pt;
+  width: auto;
+}
+.fields label.text_area {
+  vertical-align: top;
+}
+.fields input, select, textarea {
+  font: 11pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.fields textarea {
+  width: 100%;
+}
+.fields input[type=checkbox] {
+  vertical-align: middle;
+}
+.field {
+  padding: 2px 5px 2px 0;
+}
+.field label {
+  display: inline-block;  /* FF */
+  width: 150px;
+}
 .field_with_errors {
-  margin-top: 10px;
-  padding: 2px;
-  background-color: red;
+    padding: 3px 5px 3px 5px;
+  color: red;
+  font-weight: bold;
   display: table;
 }
-
 .field_with_errors label {
-  color: #fff;
+  display: inline-block;  /* FF */
+  width: 150px;
 }
+
 
 #error_explanation {
   width: 400px;

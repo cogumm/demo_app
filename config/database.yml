@@ -5,7 +5,7 @@ login: &login
   pool: 5
   host: localhost
   username: postgres
-  password: root
+  password: XXX
 
 development:
   <<: *login
