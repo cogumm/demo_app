@@ -1,15 +1,15 @@
-<p id="notice"><%= notice %></p>
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </td>
+    <td class="sidebar round">
+      <strong>Name</strong> <%= @user.name %><br />
+      <strong>URL</strong> <%= link_to user_path(@user), @user %>
+    </td>
+  </tr>
+</table>
 
-<p>
-  <b>Name:</b>
-  <%= @user.name %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
-
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
