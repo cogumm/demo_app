@@ -1,0 +1,20 @@
+# DRY
+login: &login
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: postgres
+  password: root
+
+development:
+  <<: *login
+  database: demo_app_development
+
+test:
+  <<: *login
+  database: demo_app_test
+
+production:
+  <<: *login
+  database: demo_app_production
