@@ -9,7 +9,7 @@ class MicropostsController < ApplicationController
       redirect_to root_path
     else
       @feed_items = []
-      render 'pages/home'
+      render "pages/home"
     end
   end
 
@@ -17,7 +17,7 @@ class MicropostsController < ApplicationController
     @micropost.destroy
     redirect_back_or root_path
   end
-
+  
   private
 
     def authorized_user

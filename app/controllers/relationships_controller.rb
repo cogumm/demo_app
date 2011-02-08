@@ -15,4 +15,3 @@ class RelationshipsController < ApplicationController
     respond_with @user
   end
 end
-

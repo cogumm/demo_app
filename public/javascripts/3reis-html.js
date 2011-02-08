@@ -6,6 +6,4 @@ $(document).ready(function(){
     $(this).parent().addClass("field_with_error").removeClass("field");
     $(this).remove();
   });
-
-}
-
+});

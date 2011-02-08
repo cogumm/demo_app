@@ -1,5 +1,5 @@
 .container {
-  width: 710px;
+  width: 850px;
 }
 
 body {
@@ -104,7 +104,8 @@ a.signup_button {
 footer {
   text-align: center;
   margin-top: 10px;
-  width: 710px;
+  padding: 0px 0px 10px;
+  width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -177,19 +178,19 @@ ul.users {
   vertical-align: middle;
 }
 .field {
-  padding: 2px 5px 2px 0;
+  padding: 3px 5px 3px 5px;
 }
 .field label {
   display: inline-block;  /* FF */
   width: 150px;
 }
-.field_with_errors {
-    padding: 3px 5px 3px 5px;
+.field_with_error {
+  padding: 3px 5px 3px 5px;
   color: red;
   font-weight: bold;
   display: table;
 }
-.field_with_errors label {
+.field_with_error label {
   display: inline-block;  /* FF */
   width: 150px;
 }
@@ -281,3 +282,29 @@ form.new_micropost textarea {
   margin-bottom: 0;
 }
 
+#bar {
+  background-color:#5fbbde;
+  width:0px;
+  height:16px;
+}
+
+#barbox {
+  float: right;
+  height: 16px;
+  background-color:#FFF;
+  width: 100px;
+  border: solid 2px #000;
+  margin-top: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+#count {
+  float:right;
+  margin-right: 8px;
+  margin-left: 6px;
+  font-family:'Georgia', Times New Roman, Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
