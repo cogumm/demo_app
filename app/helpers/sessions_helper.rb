@@ -31,7 +31,7 @@ module SessionsHelper
 
   def deny_access
     store_location
-    redirect_to sign_in_path, :notice => "Please sign in to access this page."
+    redirect_to sign_in_path, :notice => I18n.translate("helpers.legend.access")
   end
 
   def redirect_back_or(default)

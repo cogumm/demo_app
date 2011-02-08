@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @title = "Home"
+    @title = I18n.translate("helpers.legend.home_title")
     if signed_in?
       @micropost = Micropost.new
       @feed_items = current_user.feed.paginate(:page => params[:page], :per_page => 50)
@@ -8,15 +8,15 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @title = "Contact"
+    @title = I18n.translate("helpers.legend.contact_title")
   end
 
   def about
-    @title = "About"
+    @title = I18n.translate("helpers.legend.about_title")
   end
 
   def help
-    @title = "Help"
+    @title = I18n.translate("helpers.legend.help_title")
   end
 end
 

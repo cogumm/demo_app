@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $("#micropost_content").focus();
   
-  $("#micropost_content").keyup(function(){
+  $("#micropost_content").keyup(function(event){
     var box=$(this).val();
     var main = box.length *100;
     var value= (main / 139);
@@ -15,6 +15,7 @@ $(document).ready(function(){
     {
       alert('Opa, acabou o espaço!');
     }
+      event.stopImmediatePropagation();
       return false;
   });
 });

@@ -1,17 +1,20 @@
-<h1>Sign in</h1>
+<h1><%= translate "helpers.legend.sing_in" %></h1>
 
 <%= form_for(:session, :url => sessions_path) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
+  <div class="fields">
+    <div class="field">
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </div>
+    <div class="field">
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </div>
   </div>
   <div class="actions">
-    <%= f.submit "Sign in" %>
+    <%= f.submit translate("helpers.legend.sing_in") %>
   </div>
 <% end %>
 
-<p>New user? <%= link_to "Sign up now!", sign_up_path %></p>
+<p><%= translate "helpers.legend.new_user" %> <%= link_to translate("helpers.legend.sing_up_now"), sign_up_path %></p>
+

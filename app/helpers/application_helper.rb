@@ -6,7 +6,7 @@ module ApplicationHelper
   end
   # Return a title on a per-page basis.
   def title
-    base_title = "A rede social do MTAI"
+    base_title = I18n.translate("helpers.legend.title")
     if @title.nil?
       base_title
     else

@@ -5,7 +5,7 @@ class MicropostsController < ApplicationController
   def create
     @micropost = current_user.microposts.build(params[:micropost])
     if @micropost.save
-      flash[:success] = "Micropost created!"
+      flash[:success] = I18n.translate("helpers.legend.micropost_created")
       redirect_to root_path
     else
       @feed_items = []
@@ -17,7 +17,7 @@ class MicropostsController < ApplicationController
     @micropost.destroy
     redirect_back_or root_path
   end
-  
+
   private
 
     def authorized_user

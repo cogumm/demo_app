@@ -14,9 +14,9 @@
       <% end %>
     </td>
     <td class="sidebar round">
-      <strong>Name</strong> <%= @user.name %><br />
-      <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
-      <strong>Microposts</strong> <%= @user.microposts.count %>
+      <strong><%= label :user, :name %>:</strong> <%= @user.name %><br />
+      <strong><%= label :user, :url %>:</strong> <%= link_to @user.name, user_path(@user) %><br />
+      <strong><%= translate("activerecord.models.micropost.other") %>:</strong> <%= @user.microposts.count %>
       <%= render 'shared/stats' %>
     </td>
   </tr>

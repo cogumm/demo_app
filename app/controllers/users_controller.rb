@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_filter :admin_user,   :only => :destroy
 
   def index
-    @title = "All users"
+    @title = I18n.translate("helpers.legend.all_user")
     @users = User.paginate(:page => params[:page], :per_page => 50)
   end
 
@@ -17,39 +17,39 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    @title = "Sign up"
+    @title = I18n.translate("helpers.legend.title_sing_up")
   end
 
   def create
     @user = User.new(params[:user])
     if @user.save
       sign_in @user
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:success] = I18n.translate("helpers.legend.welcome")
       redirect_to @user
     else
-      @title = "Sign up"
+      @title = I18n.translate("helpers.legend.sing_up")
       render 'new'
     end
   end
 
   def edit
-    @title = "Edit user"
+    @title = I18n.translate("helpers.legend.edit_user")
   end
 
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
-      flash[:success] = "Profile updated."
+      flash[:success] = I18n.translate("helpers.legend.profile_updated")
       redirect_to @user
     else
-      @title = "Edit user"
+      @title = I18n.translate("helpers.legend.edit_user")
       render 'edit'
     end
   end
 
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "User destroyed."
+    flash[:success] = I18n.translate("helpers.legend.user_destroyed")
     redirect_to users_path
   end
 

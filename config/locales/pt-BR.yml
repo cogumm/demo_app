@@ -16,11 +16,11 @@ pt-BR:
       user:
         name: Nome
         email: E-mail
+        url: URL
         encrypted_password: Senha criptografada
+        confirmation: Confirmar senha
         salt: Lembrar
         admin: Administrador
-        followers: Seguidores
-        unfollow: Parar de seguir
 
   attributes:
     created_at: Criado em
@@ -51,8 +51,33 @@ pt-BR:
       create: "%{model} criado com sucesso"
       update: "%{model} alterado com sucesso"
       destroy: "%{model} excluído com sucesso"
-      accomplish: "%{model} efetuado com sucesso"
-      unification: "%{model} unificado com sucesso"
+      title: ":: A rede social do MTAI"
+      home_title: "Home ::"
+      contact_title: "Contato ::"
+      about_title: "Sobre ::"
+      help_title: "Ajuda ::"
+      home: Home
+      contact: Contato
+      about: Sobre
+      help: Ajuda
+      all_users: Todos os usuários
+      welcome: Bem-vindo a rede social do MTAI
+      title_sing_up: "Cadastrar-se ::"
+      title_sing_in: "Entrar ::"
+      sing_in: Entrar
+      sing_up_now: Cadastrar-se
+      edit_user: Editar usuário
+      new_user: Novo por aqui?
+      user_destroyed: Usuário apagado.
+      profile_updated: Perfil atualizado.
+      update: Atualizar
+      followers: Seguidores
+      follow: Seguir
+      unfollow: Parar de seguir
+      invalid_email_password: Email ou senha inválidos
+      micropost_created: Micropost criado!
+      access: Faça o login para acessar esta página.
+      what_thinking: O que você está pensando?
 
   errors:
     template:
@@ -190,3 +215,4 @@ pt-BR:
   pagination:
     next: "Próximo →"
     prev: "← Anterior"
+

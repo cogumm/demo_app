@@ -1,9 +1,9 @@
-<h1>Sign up</h1>
+<h1><%= translate "helpers.legend.sing_up_now" %></h1>
 
 <%= form_for(@user) do |f| %>
   <%= render 'fields', :f => f %>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit translate("helpers.legend.sing_up_now") %>
   </div>
 <% end %>
 

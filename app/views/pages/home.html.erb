@@ -2,7 +2,7 @@
   <table class="front" summary="For signed-in users">
     <tr>
       <td class="main">
-        <h1 class="micropost">What's up?</h1>
+        <h1 class="micropost"><%= translate "helpers.legend.what_thinking" %></h1>
         <%= render 'shared/micropost_form' %>
         <%= render 'shared/feed' %>
       </td>
@@ -20,6 +20,6 @@
     sample application.
   </p>
 
-  <%= link_to "Sign up now!", sign_up_path, :class => "signup_button round" %>
+  <%= link_to translate("helpers.legend.sing_up_now"), sign_up_path, :class => "signup_button round" %>
 <% end %>
 
